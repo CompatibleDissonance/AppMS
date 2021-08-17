@@ -49,11 +49,11 @@ public class CardPaymentForm {
 
     @Override
     public String toString() {
-        return "CardPaymentForm{" +
-                "cardNumber=" + cardNumber +
-                ", cardName='" + cardName + '\'' +
-                ", expDate=" + expDate +
-                ", securityCode=" + securityCode +
-                '}';
+        return "CardPaymentForm(" +
+                "cardNumber=" + this.cardNumber +
+                ", cardName='" + this.cardName + '\'' +
+                ", expDate=" + this.expDate +
+                ", securityCode=" + this.securityCode +
+                ")";
     }
 }
