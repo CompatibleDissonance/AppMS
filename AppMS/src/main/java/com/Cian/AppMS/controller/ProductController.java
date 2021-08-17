@@ -10,4 +10,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ProductController {
     @Autowired
     private ProductRepository productRepository;
+    @GetMapping("/")
+    public String pageDesu(Model model) {
+        model.addAttribute("products", productRepository.findAll());
+        return "index";
+    }
 }
